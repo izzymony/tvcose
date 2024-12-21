@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;00;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
+}
+
+body {
+    font-family: 'Clash Display', sans-serif; /* Set the font for the body */
+}
+
+@layer utilities {
+    main{
+        @apply w-full
+    }
+ .menu{
+    @apply  float-right;
+ }
+ nav{
+    @apply px-3 py-3 pb-1 font-clash-display;
+ }
+ h1{
+    @apply  font-clash-display font-[800] sm:text-[45px] sm:leading-[65px] text-[36px] leading-[46px] max-w-5xl md:max-w-xl  ;
+ }
+ .p{
+    @apply  text-[#333] text-[18px] font-[400] leading-[25px] font-clash-display;
+ }
+ .btn{
+    @apply  text-[#ffffff] text-[18px] font-[400] bg-[#0149E9] p-4 pr-12 w-64 rounded font-clash-display;
+ }
+.container{
+    @apply max-w-7xl p-3  mt-3  sm:grid grid-cols-2 gap-1 font-clash-display;
+}
+.box{
+    @apply  w-full bg-[#ffffff]  p-4 py-10 rounded-[10px] mt-3 text-[12px] font-[500] leading-[22px]  shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)];
+}
+.Card-header{
+    @apply font-[800] text-[14px] py-2 mt-2 font-clash-display;
+}
+.about-products{
+@apply bg-white rounded-[20px] py-4 px-3 mt-8 font-clash-display;
+}
+h2{
+    @apply text-center text-[36px] font-bold font-clash-display;
+}
+.sub-heading{
+    @apply text-black text-[24px] font-clash-display  font-[600];
+}
+.Product-container{
+    @apply p-2  ;
+}
+.product{
+    @apply bg-white/50 rounded-2xl backdrop-blur-[80.16px] py-32 rounded-[16px]  backdrop-blur-lg   mt-3;
+}
+.client{
+    @apply bg-white w-full mt-8  ;
+}
+.card-container{
+    @apply  p-4 ;
+}
+.client-card{
+    @apply bg-white w-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] px-2 pb-[18.03px] text-[16px] rounded-[20px] 
+    font-clash-display;
+}
+.flex-stars{
+    @apply font-clash-display flex justify-center items-center py-2 gap-1;
+}
+.h3{
+    @apply text-black text-4xl font-semibold text-center font-clash-display;
+}
+.article{
+    @apply bg-white w-full py-4 rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] flex-col justify-center items-center gap-6 inline-flex ;
+}
+
+.bg{
+    @apply bg-white py-10 w-full px-3;
+}
+
+.team{
+  @apply font-clash-display bg-white py-8 w-full;
+}
+.teams{
+    @apply font-clash-display w-full flex-col   mx-auto flex justify-center text-center  sm:grid grid-cols-2 gap-1  md:grid-cols-3 lg:grid-cols-4 mt-8;
+}
+
+.teams-profile-card{
+    @apply  bg-white w-[190px] rounded-tl-2xl rounded-tr-2xl border border-[#c4c4c4] pb-4 mx-auto rounded-bl-2xl rounded-br-2xl mt-2 ;
+}
+
+.w-md-editor-toolbar {
+    padding: 10px !important;
+}
+label{
+    @apply font-clash-display text-black text-sm font-medium mt-4;
+}
+form{
+    @apply  px-3 mt-4 py-3;
+}
+.form-container{
+    @apply py-2;
+}
+input{
+    @apply font-clash-display  h-[41.67px] p-[12.50px] bg-white rounded-lg border border-[#cacaca] justify-start items-center gap-[8.33px] inline-flex  mt-1 ;
+}
+
+.cta{
+   @apply  font-clash-display h-[41.67px] p-[8.33px] bg-[#0062ff] rounded-lg justify-center items-center gap-[8.33px] inline-flex text-white mt-6 w-full;
+}
+.contact{
+    @apply px-3 -mt-8;
+}
+
+footer{
+    @apply font-clash-display bg-[#0081FE]  p-4 mt-4;
+}
+
+.email{
+    @apply font-clash-display xl:w-[402px];
+}
+
+html {
+    @apply  font-clash-display scroll-smooth;
+  }
+
+
+
+}
